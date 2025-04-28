@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Hasif Azad, a JavaScript Developer with expertise in MERN stack, NodeJS, ReactJS, NextJS, and more.">
+    <meta name="keywords"
+        content="Hasif Azad, Portfolio, JavaScript Developer, MERN Stack, NodeJS, ReactJS, NextJS, HTML, CSS, JavaScript">
+    <meta name="author" content="Hasif Azad">
+    <meta property="og:title" content="Hasif Azad - Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Hasif Azad, a JavaScript Developer specializing in MERN stack, NodeJS, ReactJS, and NextJS.">
+    <meta property="og:image" content="path_to_image_for_open_graph_image.jpg"> <!-- Replace with a valid image URL -->
+    <meta property="og:url" content="https://your-website-url.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hasif Azad - Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Hasif Azad, a JavaScript Developer with expertise in MERN stack, NodeJS, ReactJS, NextJS, and more.">
+    <meta name="twitter:image" content="path_to_image_for_twitter_image.jpg"> <!-- Replace with a valid image URL -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link id="theme-style" rel="stylesheet" href="">
+
+    <title>Hasif Azad - Portfolio</title>
+</head>
+
+<body>
+    <button onclick="toggleStyle()">Switch Style</button>
+
+    <header>
+        <h1>Hasif Azad</h1>
+        <p>JavaScript Developer</p>
+    </header>
+
+    <section>
+        <h2>Contact</h2>
+        <ul>
+            <li>Phone: +91 9447033305</li>
+            <li>Email: hasifazad@gmail.com</li>
+            <li>GitHub: <a href="https://github.com/hasifazad" title="Visit my GitHub profile" target="_blank"
+                    rel="noopener noreferrer">github.com/hasifazad</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/hasifazad" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/hasifazad</a></li>
+            <li>Medium: <a href="https://medium.com/@asifazad114" target="_blank"
+                    rel="noopener noreferrer">medium.com/@asifazad114</a></li>
+            <li>Location: Kochi, Kerala</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript ES6, TypeScript, HTML5, CSS3</li>
+            <li>NodeJS (ExpressJS), ReactJS, NextJS</li>
+            <li>MongoDB, PostgreSQL, MySQL</li>
+            <li>TailwindCSS, Bootstrap, MaterialUI, JQuery</li>
+            <li>Git & GitHub,</li>
+            <li>C, Java (OOP), AWS (EC2, Route53, S3), Nginx</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <h3>Futura Labs Technologies (2022-2024)</h3>
+        <p>MERN Stack Developer cum Mentor</p>
+        <ul>
+            <li>Intern Mentorship</li>
+            <li>LMS Development</li>
+            <li>Content Creation</li>
+            <li>Seminars & Workshops</li>
+            <li>Event Coordination</li>
+        </ul>
+
+        <h3>Brototype LLP (2021-2022)</h3>
+        <p>MERN Stack Developer Intern</p>
+        <ul>
+            <li>Built e-commerce website</li>
+            <li>Built real-time online chess application</li>
+            <li>Strengthened coding skills with real-world projects</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <h3>Learning Management System (LMS)</h3>
+        <p>ReactJS frontend, NodeJS/ExpressJS backend, MongoDB databases, hosted on Render.com</p>
+        <ul>
+            <li>Role-based access</li>
+            <li>Course management</li>
+            <li>Assignment submissions</li>
+            <li>Attendance recording and reporting</li>
+            <li>Historical data tracking</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>B.Tech in Mechanical Engineering<br>
+            Kerala Technological University (2016-2020)</p>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>English</li>
+            <li>Malayalam</li>
+        </ul>
+    </section>
+
+    <button onclick="downloadPDF()">Download Resume</button>
+
+    <footer>
+        <p>&copy; 2025 Hasif Azad. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleStyle() {
+            const link = document.getElementById('theme-style');
+            if (link.getAttribute('href')) {
+                link.setAttribute('href', '');
+            } else {
+                link.setAttribute('href', './assets/styles/style.css');
+            }
+        }
+
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = './assets/pdf/hasifazad-resume.pdf';
+            link.download = 'hasifazad-resume.pdf';
+            link.click();
+        }
+    </script>
+</body>
+
+</html>
