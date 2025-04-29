@@ -3,10 +3,13 @@ body {
     background-color: #fdf6e3;
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 20px 10%;
     line-height: 1.6;
     text-align: center;
+
 }
+
+
 
 header {
     margin-bottom: 30px;
@@ -25,7 +28,7 @@ button {
     color: #fff;
     padding: 8px 16px;
     border: none;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 5px;
@@ -72,4 +75,10 @@ footer {
     margin-top: 40px;
     padding: 20px 0;
     border-top: 1px solid #ccc;
+}
+
+@media (max-width:600px) {
+    body {
+        padding: 10px;
+    }
 }

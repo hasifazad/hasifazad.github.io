@@ -22,13 +22,15 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-    <link id="theme-style" rel="stylesheet" href="">
+    <link id="theme-style" rel="stylesheet" href="./assets/styles/style.css">
 
     <title>Hasif Azad - Portfolio</title>
 </head>
 
 <body>
-    <button onclick="toggleStyle()">Switch Style</button>
+    <button onclick="toggleStyle()">Click me</button>
+    <button onclick="downloadPDF()">Download Resume</button>
+
 
     <header>
         <h1>Hasif Azad</h1>
@@ -110,11 +112,13 @@
         </ul>
     </section>
 
+
     <button onclick="downloadPDF()">Download Resume</button>
 
     <footer>
         <p>&copy; 2025 Hasif Azad. All rights reserved.</p>
     </footer>
+
 
     <script>
         function toggleStyle() {
